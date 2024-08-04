@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Friendship Day</title>
+    <title>Happy Friendship Day RoRo</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -11,20 +11,58 @@
         <h1>Happy Friendship Day RoRo</h1>
     </header>
     <main>
-        <div class="question-box">
-            <p>Will you be my Best Friend Forever RoRo?</p>
-            <button id="yes-button">Yes</button>
-            <button id="no-button">No</button>
-        </div>
+        <section id="interactive-question">
+            <p>Are you best friends forever?</p>
+            <button id="yes-btn">Yes</button>
+            <button id="no-btn">No</button>
+        </section>
+        <section id="fun-stuff">
+            <div id="friendship-quiz">
+                <h2>Friendship Quiz</h2>
+                <form id="quiz-form">
+                    <p>What's your favorite way to spend time with me?</p>
+                    <input type="radio" id="option1" name="activity" value="Shopping">
+                    <label for="option1">Shopping</label><br>
+                    <input type="radio" id="option2" name="activity" value="Fooding">
+                    <label for="option2">Fooding</label><br>
+                    <input type="radio" id="option3" name="activity" value="Movie Night">
+                    <label for="option3">Movie Night</label><br>
+                    <input type="radio" id="option4" name="activity" value="Beach-Bish">
+                    <label for="option4">Beach-Bish</label><br>
+                    <input type="radio" id="option5" name="activity" value="Phukupuchu">
+                    <label for="option5">Phukupuchu</label><br>
+                    <button type="button" onclick="submitQuiz()">Submit</button>
+                </form>
+                <p id="quiz-result"></p>
+            </div>
+            <div id="fortune-teller">
+                <h2>Friendship Fortune Teller</h2>
+                <button onclick="getFortune()">Get Your Fortune</button>
+                <p id="fortune-result"></p>
+            </div>
+            <div id="virtual-highfive">
+                <button onclick="highFive()">Give a Virtual High-Five!</button>
+            </div>
+            <div id="friendship-quotes">
+                <p>Funny Friendship Quote Here</p>
+            </div>
+            <div id="playlist">
+                <!-- Playlist or music content here -->
+            </div>
+        </section>
+        <section id="games">
+            <h2>Memory Game</h2>
+            <div id="game-board"></div>
+        </section>
+        <section id="polls">
+            <!-- Friendship polls here -->
+        </section>
     </main>
-    <div id="popup" class="popup">
-        <div class="popup-content">
-            <p>Are you sure?</p>
-            <button id="popup-yes">Yes</button>
-            <button id="popup-no">No</button>
-        </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/fireworks-js/dist/fireworks.min.js"></script>
-    <script src="script.js" defer></script>
+
+    <div id="particles-js" class="hidden"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>
+
